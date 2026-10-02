@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "shift",
+    "name": "شیفت‌بندی خادمان",
     "slug": "shift",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,7 +19,25 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-sharing",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true
+        }
+      ]
+    ],
+    "scheme": "khademshift",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
